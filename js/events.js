@@ -2,6 +2,11 @@ $(document).keypress(function(e) {
     if(e.which == 13) $('#btnAdd').click();
 });
 
+var btnGenerate = document.getElementById("btnGenerate");
+btnGenerate.addEventListener("click", function(){
+    countryChart.destroy();
+});
+
 $("#btnAdd").click(function() {
     var addedTitle = $("#title").val();
     if (!addedTitle) {

@@ -3,13 +3,6 @@
 		<title>MyMovies Analytics</title>
 		<link rel="shortcut icon" href="img/moviesIcon.ico" type="image/x-icon" />
 
-		<script src="js/events.js"></script>
-		<script src="js/constants.js"></script>
-		<script src="js/countrychart.js"></script>
-		<script src="js/apimanipulation.js"></script>
-		<script src="js/tablemanipulation.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 		<link rel="stylesheet" href="css/general.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		
@@ -24,7 +17,7 @@
 	<body>
 		<div class="form-group row" id="movie-title">
 			<div class="col-sm-8">
-				<label for="title"><strong>Título:</strong></label>
+				<label for="title"><strong>Title:</strong></label>
 				<input type="text" class="form-control" id="title" maxlength="100">
 			</div>
 			<div class="col-sm-4">
@@ -32,8 +25,8 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-sm-8">
+		<div class="row" id="content">
+			<div class="col-sm-6">
 				<table class="table table-striped" id="title-table">
 				    <thead>
 				      <tr>
@@ -50,10 +43,18 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div id="canvas_holder">
+				<div id="canvas-holder">
 					<canvas id="graphCountry" width="500" height="500"></canvas>
 				</div>
 			</div>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/countrychart.js"></script>
+		<script src="js/apimanipulation.js"></script>
+		<script src="js/tablemanipulation.js"></script>
+		<script src="js/events.js"></script>
 	</body>
 </html>

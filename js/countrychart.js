@@ -18,7 +18,7 @@ function countContryVotes() {
 function generateCountryChart() {
 	var ctx = document.getElementById("graphCountry").getContext('2d');
 
-	var myChart = new Chart(ctx, {
+	countryChart = new Chart(ctx, {
 	type: 'pie',
 	data: {
 		labels: generateListLabelOrCounter("L"),

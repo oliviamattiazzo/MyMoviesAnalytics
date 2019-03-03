@@ -7,7 +7,7 @@ function addLine(addedTitle) {
     cellTitle.innerHTML = addedTitle; 
     cellRemove.innerHTML = "<button type=\"button\" class=\"btn btn-danger\" id=\"btnRemove\" onclick=\"removeLine(this)\"><span class=\"glyphicon glyphicon-remove\"></span></button>"; 
 
-    $("#titulo").val("");
+    $("#title").val("");
 
     searchMovieInfo(addedTitle);
 }
