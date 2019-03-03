@@ -1,0 +1,21 @@
+#movie-title { 
+    width: 50%;
+}
+
+#btnAdd {
+    margin-top: 10%;
+    position: absolute;
+}
+
+#title-table {
+    width: 40%;
+    display: none;
+}
+
+#canvas_holder {
+    width: 40%;
+}
+
+#table-buttons {
+    display: none;
+}

@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>MyMovies Analytics</title>
+		<link rel="shortcut icon" href="img/moviesIcon.ico" type="image/x-icon" />
+
+		<script src="js/events.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/countrychart.js"></script>
+		<script src="js/apimanipulation.js"></script>
+		<script src="js/tablemanipulation.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+		<link rel="stylesheet" href="css/general.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		
+		<style type="text/css">
+			body {
+				margin-left: 20px;
+				margin-top: 20px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form-group row" id="movie-title">
+			<div class="col-sm-8">
+				<label for="title"><strong>Título:</strong></label>
+				<input type="text" class="form-control" id="title" maxlength="100">
+			</div>
+			<div class="col-sm-4">
+				<button type="button" class="btn btn-success" id="btnAdd"><span class="glyphicon glyphicon-plus"></span></button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8">
+				<table class="table table-striped" id="title-table">
+				    <thead>
+				      <tr>
+				        <th>Movie's Title</th>
+				        <th>Remove</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				    </tbody>
+				</table>
+				<div id="table-buttons">
+					<button type="button" class="btn btn-info" id="btnGenerate"><span class="glyphicon glyphicon-play-circle"></span> Generate charts</button>
+					<button type="button" class="btn btn-primary" id="btnDownloadXml"><span class="glyphicon glyphicon-save-file"></span> Download XML</button>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div id="canvas_holder">
+					<canvas id="graphCountry" width="500" height="500"></canvas>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
