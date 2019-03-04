@@ -24,27 +24,28 @@
 				<button type="button" id="btnAdd" class="btn btn-success" data-toggle="tooltip" title="Add movie"><span class="glyphicon glyphicon-plus"></span></button>
 			</div>
 		</div>
-
 		<div class="row" id="content">
 			<div class="col-sm-6">
-				<table class="table table-striped" id="title-table">
-				    <thead>
-				      <tr>
-				        <th>Movie's Title</th>
-				        <th>Remove</th>
-				      </tr>
-				    </thead>
-				    <tbody>
-				    </tbody>
-				</table>
-				<div id="table-buttons">
-					<button type="button" id="btnGenerate" class="btn btn-info" data-toggle="tooltip" title="Generate charts"><span class="glyphicon glyphicon-play-circle"></span></button>
-					<button type="button" id="btnDownloadXml" class="btn btn-primary" data-toggle="tooltip" title="Download XML"><span class="glyphicon glyphicon-save-file"></span></button>
+				<div class="table-wrapper">
+					<table class="table table-striped" id="title-table">
+							<thead>
+								<tr>
+									<th>Movie's Title</th>
+									<th>Remove</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+					</table>
 				</div>
+				<div id="table-buttons">
+						<button type="button" id="btnGenerate" class="btn btn-info" data-toggle="tooltip" title="Generate charts"><span class="glyphicon glyphicon-play-circle"></span></button>
+						<button type="button" id="btnDownloadXml" class="btn btn-primary" data-toggle="tooltip" title="Download XML"><span class="glyphicon glyphicon-save-file"></span></button>
+					</div>
 			</div>
 			<div class="col-sm-4">
 				<div id="canvas-holder">
-					<canvas id="graphCountry" width="500" height="500"></canvas>
+					<canvas id="graphCountry"></canvas>
 				</div>
 			</div>
 		</div>
