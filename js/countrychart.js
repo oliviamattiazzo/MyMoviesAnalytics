@@ -1,17 +1,16 @@
 function countContryVotes() {
 	arrCountries = [];
+	
 	arrTitleInfo.forEach(function(element) {
 		var movieCountry = element.Country;
-		if (arrCountries.some(el => el.Label == movieCountry)) {
-			arrCountries.forEach(function(element){
-				if (element.Label == movieCountry)
-					element.Counter++;
-			});
-		}
-		else
-		{
+		
+		const filteredMoviesCountries = arrCountries.filter(el => el.Label == movieCountry);
+
+		if(filteredMoviesCountries.length == 0) {
 			arrCountries.push({ Label: movieCountry, Counter: 1 });
 		}
+
+		filteredMoviesCountries.forEach(el => el.Counter++);
 	});
 }
 
@@ -47,12 +46,11 @@ function generateCountryChart() {
 function generateListLabelOrCounter(index) {
 	var arr = [];
 
-	arrCountries.forEach(function(element){
-		if (index.toUpperCase() == "L") 
-			arr.push(element.Label);
-
-		if (index.toUpperCase() == "C")
-			arr.push(element.Counter);
+	arr = arrCountries.map(function(vote){
+		if (index.toUpperCase() == "L")
+			return vote.Label
+		else
+			return vote.Counter;
 	});
 
 	return arr;

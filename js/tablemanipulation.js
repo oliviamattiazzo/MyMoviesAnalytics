@@ -16,12 +16,13 @@ function removeLine(line) {
     removeDataFromLists(line.parentNode.parentNode.rowIndex);
 
     var table = document.getElementById("title-table");
-      var i = line.parentNode.parentNode.rowIndex;
-      table.deleteRow(i);
+    var i = line.parentNode.parentNode.rowIndex;
+    table.deleteRow(i);
 
-      if (table.rows.length == 1){
+    if (table.rows.length == 1){
         $("#title-table").hide();
         $("#table-buttons").hide();
+        $("#canvas-holder").hide();
     }
 }
 
