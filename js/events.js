@@ -26,5 +26,5 @@ $("#btnGenerate").click(function() {
 });
 
 $("#btnDownloadXml").click(function() {
-
+    downloadsXml();
 });
