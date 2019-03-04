@@ -1,4 +1,7 @@
-$(document).keypress(function(e) {
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+.keypress(function(e) {
     if(e.which == 13) $('#btnAdd').click();
 });
 

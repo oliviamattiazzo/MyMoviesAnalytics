@@ -1,15 +1,16 @@
 function addLine(addedTitle) {
     var table = document.getElementById("title-table");
     var rowsNumber = table.rows.length;
+    
     var line = table.insertRow(rowsNumber);
+
     var cellTitle = line.insertCell(0);
     var cellRemove = line.insertCell(1);
+
     cellTitle.innerHTML = addedTitle; 
-    cellRemove.innerHTML = "<button type=\"button\" class=\"btn btn-danger\" id=\"btnRemove\" onclick=\"removeLine(this)\"><span class=\"glyphicon glyphicon-remove\"></span></button>"; 
+    cellRemove.innerHTML = "<button type=\"button\" id=\"btnRemove\" class=\"btn btn-danger\" data-toggle=\"tooltip\" title=\"Remove movie\" onclick=\"removeLine(this)\"><span class=\"glyphicon glyphicon-remove\"></span></button>"; 
 
     $("#title").val("");
-
-    searchMovieInfo(addedTitle);
 }
 
 function removeLine(line) {
