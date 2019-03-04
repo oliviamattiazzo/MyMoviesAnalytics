@@ -14,8 +14,7 @@ $("#btnAdd").click(function() {
         return;
     }
 
-    addLine(addedTitle);
-    showsTable();
+    searchMovieInfo(addedTitle);
 });
 
 $("#btnGenerate").click(function() {
