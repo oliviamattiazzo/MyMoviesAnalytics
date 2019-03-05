@@ -20,10 +20,10 @@ function removeLine(line) {
     var i = line.parentNode.parentNode.rowIndex;
     table.deleteRow(i);
 
+    generateCountryChart();
+
     if (table.rows.length == 1){
-        $("#title-table").hide();
-        $("#table-buttons").hide();
-        $("#canvas-holder").hide();
+        hideTableAndChart();    
     }
 }
 
@@ -36,4 +36,10 @@ function showsTable() {
         $("#title-table").show();
         $("#table-buttons").show();
     }
+}
+
+function hideTableAndChart() {
+    $("#title-table").hide();
+    $("#table-buttons").hide();
+    $("#canvas-holder").hide();
 }

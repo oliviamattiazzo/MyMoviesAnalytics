@@ -9,6 +9,8 @@ function searchMovieInfo(addedTitle) {
             addLine(addedTitle);
             showsTable();
             arrTitleInfo.push(result);
+
+            generateCountryChart();
         }
     });
 }
