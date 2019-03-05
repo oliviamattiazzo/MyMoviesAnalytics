@@ -18,12 +18,12 @@
     text-align: left;
 }
 
-#table-buttons {
-    display: none;
-}
-
 #content {
     width: 100%;
+}
+
+#upload {
+    display: none;
 }
 
 .table-wrapper

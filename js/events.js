@@ -1,12 +1,12 @@
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 })
-    .keypress(function (e) {
-        if (e.which == 13) $('#btnAdd').click();
-    });
+.keypress(function (e) {
+    if (e.which == 13) $('#btnAdd').click();
+});
 
-var btnGenerate = document.getElementById("btnGenerate");
-btnGenerate.addEventListener("click", function () {
+var btnAdd = document.getElementById("btnAdd");
+btnAdd.addEventListener("click", function () {
     countryChart.destroy();
 });
 
@@ -20,16 +20,11 @@ $("#btnAdd").click(function () {
     searchMovieInfo(addedTitle);
 });
 
-$("#btnGenerate").click(function () {
-    countContryVotes();
-    generateCountryChart();
-});
-
 $("#btnDownloadXml").click(function () {
     downloadsXml();
 });
 
-$("#btnUpload").click(function () {
+$("#btnImportXml").click(function () {
     var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xml)$/;
     if (regex.test($("#fileUpload").val().toLowerCase())) {
         if (typeof (FileReader) != "undefined") {

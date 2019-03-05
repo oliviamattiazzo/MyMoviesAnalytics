@@ -34,12 +34,10 @@ function removeDataFromLists(rowIndex) {
 function showsTable() {
     if ($("#title-table").is(":hidden")) {
         $("#title-table").show();
-        $("#table-buttons").show();
     }
 }
 
 function hideTableAndChart() {
     $("#title-table").hide();
-    $("#table-buttons").hide();
     $("#canvas-holder").hide();
 }
