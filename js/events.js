@@ -24,9 +24,14 @@ $("#btnDownloadXml").click(function () {
     downloadsXml();
 });
 
-$("#btnImportXml").click(function () {
+$("#btnUploadXml").click(function(){
+    $("#inpXmlFile").click();
+});
+
+$("#inpXmlFile").change(function () {
     var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xml)$/;
-    if (regex.test($("#fileUpload").val().toLowerCase())) {
+
+    if (regex.test($("#inpXmlFile").val().toLowerCase())) {
         if (typeof (FileReader) != "undefined") {
             var reader = new FileReader();
             reader.onload = function (e) {

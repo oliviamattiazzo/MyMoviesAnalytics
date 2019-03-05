@@ -22,8 +22,9 @@
     width: 100%;
 }
 
-#upload {
-    display: none;
+#inpXmlFile {
+    position: relative;
+    opacity: 0;
 }
 
 .table-wrapper
