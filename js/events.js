@@ -1,13 +1,7 @@
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
-})
-    .keypress(function (e) {
-        if (e.which == 13) $('#btnAdd').click();
-    });
-
-var btnAdd = document.getElementById("btnAdd");
-btnAdd.addEventListener("click", function () {
-    countryChart.destroy();
+}).keypress(function (e) {
+    if (e.which == 13) $('#btnAdd').click();
 });
 
 $("#btnAdd").click(function () {

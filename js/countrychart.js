@@ -16,6 +16,9 @@ function countContryVotes() {
 
 function generateCountryChart() {
 	countContryVotes();
+
+	document.getElementById("canvas-holder").innerHTML = '&nbsp;';
+	document.getElementById("canvas-holder").innerHTML = '<canvas id="graphCountry"></canvas>';
 	var ctx = document.getElementById("graphCountry").getContext('2d');
 
 	countryChart = new Chart(ctx, {
