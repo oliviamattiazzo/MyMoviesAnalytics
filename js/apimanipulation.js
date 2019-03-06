@@ -7,10 +7,10 @@ function searchMovieInfo(addedTitle) {
         }
         else {
             addLine(addedTitle);
-            showsTable();
             arrTitleInfo.push(result);
-
-            generateCountryChart();
         }
+    }).done(function() {
+        showsTable();
+        generateCountryChart();
     });
 }
