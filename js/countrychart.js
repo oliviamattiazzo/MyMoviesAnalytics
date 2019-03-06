@@ -2,7 +2,7 @@ function countContryVotes() {
 	arrCountries = [];
 	
 	arrTitleInfo.forEach(function(element) {
-		var movieCountry = element.Country;
+		var movieCountry = getsMainCountry(element.Country);
 		
 		const filteredMoviesCountries = arrCountries.filter(el => el.Label == movieCountry);
 
@@ -58,4 +58,12 @@ function generateListLabelOrCounter(index) {
 	});
 
 	return arr;
+}
+
+function getsMainCountry(moviesCountry) {
+	const splitCountries = moviesCountry.split(",");
+
+	if (splitCountries.length == 0)
+		return moviesCountry;
+	return splitCountries[0].trim();
 }
