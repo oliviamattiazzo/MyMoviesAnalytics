@@ -5,6 +5,7 @@
 
 		<link rel="stylesheet" href="css/general.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 		
 		<style type="text/css">
 			body {
@@ -48,12 +49,22 @@
 				<div id="canvas-holder">
 					<canvas id="graphCountry"></canvas>
 				</div>
+				<div id="credits">
+					<div id="mdlCredits" class="modal">
+						<p>Thanks for clicking. That felt good.</p>
+						<a href="#" rel="modal:close">Close</a>
+					</div>
+					<p><a href="#mdlCredits" rel="modal:open">Open Modal</a></p>
+				</div>
 			</div>
 		</div>
+
+		
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 		<script src="js/constants.js"></script>
 		<script src="js/countrychart.js"></script>
 		<script src="js/apimanipulation.js"></script>
