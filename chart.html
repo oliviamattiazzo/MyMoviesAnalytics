@@ -5,7 +5,6 @@
 
 		<link rel="stylesheet" href="css/general.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 		
 		<style type="text/css">
 			body {
@@ -50,11 +49,49 @@
 					<canvas id="graphCountry"></canvas>
 				</div>
 				<div id="credits">
-					<div id="mdlCredits" class="modal">
-						<p>Thanks for clicking. That felt good.</p>
-						<a href="#" rel="modal:close">Close</a>
+					<div class="modal fade" id="mdlCredits" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<h4>Credits</h4>
+									<p>Hello there! Thanks for clicking in the pink little button!</p>
+									<p>My name is Olivia and I developed this little thing to reinforce my knowledge in CSS, Javascript and jQuery.
+										These are technologies that I really like and I'm not using in my current work.
+										(I'm not a big fan of front-end development tho. And I also do not have a sharp aesthetic sense.)
+									</p>
+									<p>Feel free to email me any questions, tips or feedbacks about this little project. I'll be happy to reply!</p>
+									<p>For this project, I used the plugin <a href="https://www.chartjs.org/">ChartJS</a> to generate the charts.</p>
+									<p>The icon on the browser's tab is from <a href="https://www.iconfinder.com/iconsets/google-material-design-icons">this link</a>, on IconFinder.</p>
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="https://twitter.com/ohtheskywalkers"><img src="img/social_twitter.png"></a>
+										</div>
+										<div class="col-sm-2">
+											<a href="https://oliviamattiazzo.wordpress.com/"><img src="img/social_blog.png"></a>
+										</div>
+										<div class="col-sm-2">
+											<a href="https://github.com/oliviamattiazzo"><img src="img/social_github.png"></a>
+										</div>
+										<div class="col-sm-2">
+											<a href="https://www.linkedin.com/in/olivia-pachele-mattiazzo-433a8711b/"><img src="img/social_linkedin.png"></a>
+										</div>
+										<div class="col-sm-2">
+											<a href="http://oliviamattiazzo.com.br/"><img src="img/social_site.png"></a>
+										</div>
+										<div class="col-sm-2">
+											<a href="mailto:oli.pmatt@gmail.com"><img src="img/social_email.png"></a>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+								</div>
+							</div>
+						</div>
 					</div>
-					<p><a href="#mdlCredits" rel="modal:open">Open Modal</a></p>
+					<button type="button" class="btn btn-love" data-toggle="modal" data-target="#mdlCredits">
+						<span class="glyphicon glyphicon-heart"></span>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -64,7 +101,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 		<script src="js/constants.js"></script>
 		<script src="js/countrychart.js"></script>
 		<script src="js/apimanipulation.js"></script>
