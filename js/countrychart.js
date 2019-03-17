@@ -21,6 +21,8 @@ function generateCountryChart() {
 	document.getElementById("canvas-holder").innerHTML = '<canvas id="graphCountry"></canvas>';
 	var ctx = document.getElementById("graphCountry").getContext('2d');
 
+	setValueNumberOfMoviesCounter(arrTitleInfo.length);
+
 	countryChart = new Chart(ctx, {
 	type: 'pie',
 	data: {
