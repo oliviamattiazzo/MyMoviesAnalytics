@@ -16,7 +16,8 @@ To use the software, you have to download the archives and open the page **chart
 
 ### Things I would like to do in this project :+1:
 
-- [ ] Show the amount of time the person spend watching the movies from the list
+- [X] Show the amount of time the person spend watching the movies from the list
+  - [ ] Make it look more user friendly (showing in hours, days, months, etc)
 - [X] Show a counter with the quantity of movies watched
 - [ ] Find a way to show from where each movie comes from
 - [ ] Add new graphics (Any idea? Please contact me!)
