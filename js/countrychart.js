@@ -22,6 +22,7 @@ function generateCountryChart() {
 	var ctx = document.getElementById("graphCountry").getContext('2d');
 
 	setValueNumberOfMoviesCounter(arrTitleInfo.length);
+	setValueTimeWatchingMoviesCounter();
 
 	countryChart = new Chart(ctx, {
 	type: 'pie',
