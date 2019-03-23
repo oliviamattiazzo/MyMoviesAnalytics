@@ -26,6 +26,14 @@ function timeProcessor(timeInMinutes) {
 
     if (hoursInInt < 24)
         return minutesToHourConverter(hoursInDecimal, hoursInInt);
+    //if (hoursInInt >= 24 && hoursInInt < 168)
+        //days
+    //if (hoursInInt >= 168 && hoursInInt < 730)
+        //weeks
+    //if (hoursInInt >= 730 && hoursInInt < 8760)
+        //months
+    //if (hoursInInt >= 8760)
+        //year
 }
 
 function minutesToHourConverter(hoursInDecimal, hoursInInt) {
