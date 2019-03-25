@@ -8,7 +8,7 @@ You insert the name of the movies you've watched and it'll return you a chart, i
 
 You can also export the list of movies to an XML, saving your progress. And, as expected, you can import it back to the project to continue it!
 
-There's also a button to see some credits :simple_smile:
+There's also a button to see some credits :blush:
 
 ### How to use it? :arrow_forward:
 
