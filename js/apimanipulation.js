@@ -6,11 +6,15 @@ function searchMovieInfo(addedTitle) {
             alert("We couldn't find this movie in the database. What about checking the spelling?");
         }
         else {
-            addLine(addedTitle);
+            addLine(addedTitle, getsCountryCode(result.Country));
             arrTitleInfo.push(result);
         }
     }).done(function() {
         showsTable();
         generateCountryChart();
     });
+}
+
+function getsCountryCode(country) {
+    return "US";
 }

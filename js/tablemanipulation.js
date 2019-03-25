@@ -1,13 +1,15 @@
-function addLine(addedTitle) {
+function addLine(addedTitle, countryCode) {
     var table = document.getElementById("title-table");
     var rowsNumber = table.rows.length;
     
     var line = table.insertRow(rowsNumber);
 
     var cellTitle = line.insertCell(0);
-    var cellRemove = line.insertCell(1);
+    var cellFlag = line.insertCell(1);
+    var cellRemove = line.insertCell(2);
 
     cellTitle.innerHTML = addedTitle; 
+    cellFlag.innerHTML = '<img src="https://www.countryflags.io/' + countryCode + '/shiny/64.png">';
     cellRemove.innerHTML = "<button type=\"button\" id=\"btnRemove\" class=\"btn btn-danger\" data-toggle=\"tooltip\" title=\"Remove movie\" onclick=\"removeLine(this)\"><span class=\"glyphicon glyphicon-remove\"></span></button>"; 
 
     $("#title").val("");

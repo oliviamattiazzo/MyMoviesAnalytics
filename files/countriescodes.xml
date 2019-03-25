@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<countries>
+    <country>
+        <full_name>USA</full_name>
+        <code>US</code>
+    </country>
+    <country>
+        <full_name>Ireland</full_name>
+        <code>IE</code>
+    </country>
+    <country>
+        <full_name>France</full_name>
+        <code>FR</code>
+    </country>
+    <country>
+        <full_name>Germany</full_name>
+        <code>DE</code>
+    </country>
+    <country>
+        <full_name>Australia</full_name>
+        <code>AU</code>
+    </country>
+</countries>
