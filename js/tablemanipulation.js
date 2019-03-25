@@ -9,7 +9,7 @@ function addLine(addedTitle, countryCode) {
     var cellRemove = line.insertCell(2);
 
     cellTitle.innerHTML = addedTitle; 
-    cellFlag.innerHTML = '<img src="https://www.countryflags.io/' + countryCode + '/shiny/64.png">';
+    cellFlag.innerHTML = '<img src="https://www.countryflags.io/' + countryCode + '/shiny/32.png" class="img-flag">';
     cellRemove.innerHTML = "<button type=\"button\" id=\"btnRemove\" class=\"btn btn-danger\" data-toggle=\"tooltip\" title=\"Remove movie\" onclick=\"removeLine(this)\"><span class=\"glyphicon glyphicon-remove\"></span></button>"; 
 
     $("#title").val("");

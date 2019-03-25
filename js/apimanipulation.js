@@ -16,5 +16,11 @@ function searchMovieInfo(addedTitle) {
 }
 
 function getsCountryCode(country) {
-    return "US";
+    $.getJSON("resources/countriescodes.json", function (data) {
+        $.each(data, function(key, val) {
+            if (key == country)
+                return val;
+        });
+    });
+    return "0";
 }
