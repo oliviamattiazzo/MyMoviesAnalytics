@@ -5,13 +5,16 @@ function searchMovieInfo(addedTitle) {
         if (result.Error) {
             alert("We couldn't find this movie in the database. What about checking the spelling?");
         }
+        else if (result.Type != "movie") {
+            alert("The title is not a movie!")
+        }
         else {
             addLine(addedTitle, getsCountryCode(result.Country));
             arrTitleInfo.push(result);
+            
+            showsTable();
+            generateCountryChart();
         }
-    }).done(function() {
-        showsTable();
-        generateCountryChart();
     });
 }
 
