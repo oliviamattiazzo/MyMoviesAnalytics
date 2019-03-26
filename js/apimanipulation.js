@@ -16,11 +16,19 @@ function searchMovieInfo(addedTitle) {
 }
 
 function getsCountryCode(country) {
-    $.getJSON("resources/countriescodes.json", function (data) {
-        $.each(data, function(key, val) {
-            if (key == country)
-                return val;
-        });
-    });
-    return "0";
+    const mainCountry = getsMainCountry(country);
+    switch (mainCountry) {
+        case "USA":
+            return "US";
+        case "Ireland":
+            return "IE";
+        case "France":
+            return "FR";
+        case "Germany":
+            return "DE";
+        case "Australia":
+            return "AU";
+        default:
+            return "0";
+    }
 }
