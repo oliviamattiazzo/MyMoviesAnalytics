@@ -1,5 +1,5 @@
-function setValueNumberOfMoviesCounter(numberMovies) {
-    $("#watched-movies-number").html(numberMovies);
+function setValueNumberOfMoviesCounter() {
+    $("#watched-movies-number").html(arrTitleInfo.length);
 }
 
 function setValueTimeWatchingMoviesCounter() {
@@ -15,4 +15,15 @@ function setValueTimeWatchingMoviesCounter() {
     });
 
     $("#watched-movies-time").html(timeProcessor(totalTime));
+}
+
+function setValueAverageRatings() {
+    const ratingsArray = arrTitleInfo.Ratings;
+
+    
+}
+
+function setCounters() {
+    setValueNumberOfMoviesCounter();
+	setValueTimeWatchingMoviesCounter();
 }
