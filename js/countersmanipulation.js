@@ -18,12 +18,16 @@ function setValueTimeWatchingMoviesCounter() {
 }
 
 function setValueAverageRatings() {
-    const ratingsArray = arrTitleInfo.Ratings;
+    const ratingsArray = arrTitleInfo[arrTitleInfo.length - 1].Ratings;
 
-    
+    const imdb = ratingsArray[0].Value;
+    const rottenTomatoes = ratingsArray[1].Value;
+    console.log(imdb);
+    console.log(rottenTomatoes);
 }
 
 function setCounters() {
     setValueNumberOfMoviesCounter();
-	setValueTimeWatchingMoviesCounter();
+    setValueTimeWatchingMoviesCounter();
+    setValueAverageRatings();
 }
