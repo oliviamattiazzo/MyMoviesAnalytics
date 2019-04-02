@@ -18,12 +18,34 @@ function setValueTimeWatchingMoviesCounter() {
 }
 
 function setValueAverageRatings() {
-    const ratingsArray = arrTitleInfo[arrTitleInfo.length - 1].Ratings;
+    var imdb = 0;
+    var rottenTomatoes = 0;
+    var counterImdb = 0;
+    var counterRt = 0;
 
-    const imdb = ratingsArray[0].Value;
-    const rottenTomatoes = ratingsArray[1].Value;
-    console.log(imdb);
-    console.log(rottenTomatoes);
+    const ratingsArray = arrTitleInfo.map(function (element){
+        return element.Ratings;
+    });
+
+    ratingsArray.forEach(function (element){
+        if (element[0] != undefined) {
+            imdb += parseFloat(element[0].Value.split("/")[0]);
+            counterImdb += 1;
+        }
+
+        if (element[1] != undefined) {
+            rottenTomatoes += parseFloat(element[1].Value.substring(0, element[1].Value.length - 1));
+            counterRt += 1;
+        }
+    });
+
+    const averageImdb = imdb / counterImdb;
+    const averateRottenTomatoes = rottenTomatoes / counterRt;
+
+    const lblRatings = "IMDB: " + parseFloat(averageImdb.toFixed(1)) + "/10" +
+                        " | Rotten Tomatoes: " + parseInt(averateRottenTomatoes) + "%";
+
+    $("#average-rating").html(lblRatings);
 }
 
 function setCounters() {

@@ -14,6 +14,7 @@ function searchMovieInfo(addedTitle) {
             
             showsTable();
             generateCountryChart();
+            setCounters();
         }
     });
 }

@@ -20,9 +20,7 @@ function generateCountryChart() {
 	document.getElementById("canvas-holder").innerHTML = '&nbsp;';
 	document.getElementById("canvas-holder").innerHTML = '<canvas id="graphCountry"></canvas>';
 	var ctx = document.getElementById("graphCountry").getContext('2d');
-
-	setCounters();
-
+	
 	countryChart = new Chart(ctx, {
 	type: 'pie',
 	data: {
