@@ -20,7 +20,7 @@ To use the software, you have to download the archives and open the page **chart
   - [ ] Make it look more user friendly (showing in hours, days, months, etc)
 - [X] Show a counter with the quantity of movies watched
 - [X] Find a way to show from where each movie comes from
-- [ ] Average rating of all the movies added (according to IMDB and Rotten Tomatoes)
+- [X] Average rating of all the movies added (according to IMDB and Rotten Tomatoes)
 - [ ] Add new graphics (Any idea? Please contact me!)
   - [ ] In case of new graphics, add checkbox to let the user choose which graphs he would like to see
   
