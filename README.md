@@ -4,7 +4,7 @@ Your watched movies in, graphs about them out! :clapper:
 ### What is it? :thought_balloon:
 It is a little project I developed to reinforce my knowledge in CSS, Javascript and jQuery.
 
-You insert the name of the movies you've watched and it'll return you a chart, indicating from where the movies come from.
+You insert the name of the movies you've watched and it'll return you a chart, indicating from where the movies are.
 
 You can also export the list of movies to an XML, saving your progress. And, as expected, you can import it back to the project to continue it!
 
